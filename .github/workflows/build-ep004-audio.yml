@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '.podcast/ep004-ready.json'
+      - '.github/workflows/build-ep004-audio.yml'
 permissions:
   contents: write
 jobs:
@@ -13,8 +14,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Check FFmpeg
-        run: ffmpeg -version
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
       - name: Assemble and validate complete dialogue
         run: python3 .podcast/build_ep004.py
       - name: Save audio and page
