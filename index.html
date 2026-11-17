@@ -22,11 +22,19 @@ a{color:inherit}button{font:inherit}a,button{-webkit-tap-highlight-color:transpa
 <main>
 <section class="hero" aria-labelledby="title"><div class="eyebrow">专题资料 · 持续收录</div><h1 id="title">把好奇，<br>留给下一次收听。</h1><p class="intro">每期一份完整资料，一个独立链接。选一个想了解的话题，带到来福，听它慢慢讲清楚。</p></section>
 <nav class="columns" aria-label="播客栏目">
-<a class="column" href="#ora-class"><span class="eyebrow">01 / 车型课堂</span><strong>欧拉好猫新手课堂 <span aria-hidden="true">↘</span></strong><span>2027 款 430 豪华版 · 依据官方说明书分阶段学习</span><small>2 期已发布</small></a>
+<a class="column" href="#ora-class"><span class="eyebrow">01 / 车型课堂</span><strong>欧拉好猫新手课堂 <span aria-hidden="true">↘</span></strong><span>2027 款 430 豪华版 · 依据官方说明书分阶段学习</span><small>3 期已发布</small></a>
 <a class="column" href="#owner-experience"><span class="eyebrow">02 / 经验专题</span><strong>新能源车主经验 <span aria-hidden="true">↘</span></strong><span>真实车主讨论、日常补能与新手避坑</span><small>1 期已发布</small></a>
 </nav>
-<section id="ora-class" class="collection" aria-labelledby="ora-title"><div class="sectionhead"><h2 id="ora-title">欧拉好猫新手课堂</h2><span class="count">2 期已发布</span></div>
+<section id="ora-class" class="collection" aria-labelledby="ora-title"><div class="sectionhead"><h2 id="ora-title">欧拉好猫新手课堂</h2><span class="count">3 期已发布</span></div>
 <p class="collection-intro">面向第一次开新能源车的新手，依据2027款欧拉好猫官方说明书分阶段学习。本栏目以430豪华版为准，每期独立保存。</p>
+<article class="episode">
+<div class="art" aria-hidden="true"><div class="disc"><span class="label">03</span></div><small>ORA GOOD CAT / BEGINNER CLASS</small></div>
+<div><div class="meta"><span class="tag">欧拉好猫新手课堂</span><span>EP. 003</span><time datetime="2026-11-17">2026.11.17</time><span>建议 15–20 分钟</span></div>
+<h3><a href="/episodes/ora-003.html">第一次真正开起来：油门、刹车、低速跟车与能量回收</a></h3>
+<p class="summary">用实际驾驶场景认识蠕行、慢速加减速、停车场挪车、驾驶模式、舒适制动和能量回收，并解释为何松电门不能代替刹车。依据2027款官方说明书。</p>
+<div class="actions"><a class="btn" href="/episodes/ora-003.html">阅读本期资料 <span aria-hidden="true">&nbsp;↗</span></a><button class="btn secondary" type="button" id="copy-ora-3" data-url="https://listen.motifrevue.com/episodes/ora-003.html">复制点播链接</button></div>
+<p class="status" id="copy-ora-3-status" role="status" aria-live="polite"></p>
+</div></article>
 <article class="episode">
 <div class="art" aria-hidden="true"><div class="disc"><span class="label">02</span></div><small>ORA GOOD CAT / BEGINNER CLASS</small></div>
 <div><div class="meta"><span class="tag">欧拉好猫新手课堂</span><span>EP. 002</span><time datetime="2026-11-17">2026.11.17</time><span>建议 12–15 分钟</span></div>
@@ -60,6 +68,9 @@ a{color:inherit}button{font:inherit}a,button{-webkit-tap-highlight-color:transpa
 const button=document.getElementById('copy'),status=document.getElementById('copy-status');
 const oraButton=document.getElementById('copy-ora'),oraStatus=document.getElementById('copy-ora-status');
 const ora2Button=document.getElementById('copy-ora-2'),ora2Status=document.getElementById('copy-ora-2-status');
+const ora3Button=document.getElementById('copy-ora-3'),ora3Status=document.getElementById('copy-ora-3-status');
+ora3Button?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(ora3Button.dataset.url);ora3Status.textContent='链接已复制，去来福粘贴即可。';ora3Button.textContent='已复制 ✓';setTimeout(()=>ora3Button.textContent='复制点播链接',2500)}catch(e){ora3Status.textContent='请打开“阅读本期资料”，复制浏览器地址栏中的链接。'}});
+
 ora2Button?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(ora2Button.dataset.url);ora2Status.textContent='链接已复制，去来福粘贴即可。';ora2Button.textContent='已复制 ✓';setTimeout(()=>ora2Button.textContent='复制点播链接',2500)}catch(e){ora2Status.textContent='请打开“阅读本期资料”，复制浏览器地址栏中的链接。'}});
 oraButton?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(oraButton.dataset.url);oraStatus.textContent='链接已复制，去来福粘贴即可。';oraButton.textContent='已复制 ✓';setTimeout(()=>oraButton.textContent='复制点播链接',2500)}catch(e){oraStatus.textContent='请打开“阅读本期资料”，复制浏览器地址栏中的链接。'}});
 button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(button.dataset.url);status.textContent='链接已复制，去来福粘贴即可。';button.textContent='已复制 ✓';setTimeout(()=>button.textContent='复制点播链接',2500)}catch(e){status.textContent='请打开“阅读本期资料”，复制浏览器地址栏中的链接。'}});
