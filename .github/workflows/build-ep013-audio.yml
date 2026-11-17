@@ -1,0 +1,29 @@
+name: Build episode 013 Janet narration
+on:
+  push:
+    paths:
+      - '.github/workflows/build-ep013-audio.yml'
+permissions:
+  contents: write
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install audio encoder
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Assemble complete Janet narration
+        run: python3 .podcast/build_ep013.py
+      - name: Save complete audio and thirteenth episode page
+        run: |
+          git config user.name 'suyeye6117-pixel'
+          git config user.email '307068200+suyeye6117-pixel@users.noreply.github.com'
+          git add assets/audio/ora-013-janet.mp3 assets/audio/ora-013-janet.json episodes/ora-013.html index.html
+          git commit -m 'Publish episode 013 Janet female narration'
+          git pull --rebase origin main
+          git push origin HEAD:main
