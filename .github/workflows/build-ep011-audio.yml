@@ -1,0 +1,29 @@
+name: Build episode 011 Annie narration
+on:
+  push:
+    paths:
+      - '.github/workflows/build-ep011-audio.yml'
+permissions:
+  contents: write
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install audio encoder
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Assemble complete Annie narration
+        run: python3 .podcast/build_ep011.py
+      - name: Save complete audio and eleventh episode page
+        run: |
+          git config user.name 'suyeye6117-pixel'
+          git config user.email '307068200+suyeye6117-pixel@users.noreply.github.com'
+          git add assets/audio/ora-011-annie.mp3 assets/audio/ora-011-annie.json episodes/ora-011.html index.html
+          git commit -m 'Publish episode 011 Annie female narration'
+          git pull --rebase origin main
+          git push origin HEAD:main
