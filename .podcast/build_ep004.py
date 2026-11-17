@@ -138,7 +138,7 @@ def main():
         page = page_path.read_text(encoding="utf-8")
         page = page.replace('<link rel="stylesheet" href="/assets/read-aloud.css">', "")
         page = page.replace('<script src="/assets/read-aloud.js" defer></script>', "")
-        player = f'''<aside class="episode-audio" aria-label="第四期男女对话音频" data-no-read>
+        player = f'''<aside class="episode-audio" id="read-aloud" aria-label="第四期男女对话音频" data-no-read>
 <h2 style="font-size:21px;margin:0 0 12px">第四期 · 男女对话版</h2>
 <p style="margin:0 0 12px;color:#687477">Haoran 男声 × Mengyao 女声 · {minutes}分{seconds:02d}秒 · 仅节目正文</p>
 <audio id="episode-audio" controls preload="metadata" style="width:100%" src="/assets/audio/ora-004-duet.mp3">浏览器不支持音频播放。</audio>
