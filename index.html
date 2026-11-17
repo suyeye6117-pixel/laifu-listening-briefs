@@ -22,11 +22,19 @@ a{color:inherit}button{font:inherit}a,button{-webkit-tap-highlight-color:transpa
 <main>
 <section class="hero" aria-labelledby="title"><div class="eyebrow">专题资料 · 持续收录</div><h1 id="title">把好奇，<br>留给下一次收听。</h1><p class="intro">每期一份完整资料，一个独立链接。选一个想了解的话题，带到来福，听它慢慢讲清楚。</p></section>
 <nav class="columns" aria-label="播客栏目">
-<a class="column" href="#ora-class"><span class="eyebrow">01 / 车型课堂</span><strong>欧拉好猫新手课堂 <span aria-hidden="true">↘</span></strong><span>2027 款 430 豪华版 · 依据官方说明书分阶段学习</span><small>4 期已发布</small></a>
+<a class="column" href="#ora-class"><span class="eyebrow">01 / 车型课堂</span><strong>欧拉好猫新手课堂 <span aria-hidden="true">↘</span></strong><span>2027 款 430 豪华版 · 依据官方说明书分阶段学习</span><small>5 期已发布</small></a>
 <a class="column" href="#owner-experience"><span class="eyebrow">02 / 经验专题</span><strong>新能源车主经验 <span aria-hidden="true">↘</span></strong><span>真实车主讨论、日常补能与新手避坑</span><small>1 期已发布</small></a>
 </nav>
-<section id="ora-class" class="collection" aria-labelledby="ora-title"><div class="sectionhead"><h2 id="ora-title">欧拉好猫新手课堂</h2><span class="count">4 期已发布</span></div>
+<section id="ora-class" class="collection" aria-labelledby="ora-title"><div class="sectionhead"><h2 id="ora-title">欧拉好猫新手课堂</h2><span class="count">5 期已发布</span></div>
 <p class="collection-intro">面向第一次开新能源车的新手，依据2027款欧拉好猫官方说明书分阶段学习。本栏目以430豪华版为准，每期独立保存。</p>
+<article class="episode">
+<div class="art" aria-hidden="true"><div class="disc"><span class="label">05</span></div><small>ORA GOOD CAT / BEGINNER CLASS</small></div>
+<div><div class="meta"><span class="tag">欧拉好猫新手课堂</span><span>EP. 005</span><time datetime="2026-11-17">2026.11.17</time><span>建议 18–22 分钟</span></div>
+<h3><a href="/episodes/ora-005.html">倒车影像、360全景和泊车雷达：新手停车先看哪里</a></h3>
+<p class="summary">从R挡倒车影像、动态引导线、360全景视角到防撞雷达提示音，学会新手倒车的观察顺序，并分清泊车辅助、遥控泊车和倒车循迹的配置边界与安全限制。依据2027款官方说明书。</p>
+<div class="actions"><a class="btn" href="/episodes/ora-005.html">阅读本期资料 <span aria-hidden="true">&nbsp;↗</span></a><button class="btn secondary" type="button" id="copy-ora-5" data-url="https://listen.motifrevue.com/episodes/ora-005.html">复制点播链接</button></div>
+<p class="status" id="copy-ora-5-status" role="status" aria-live="polite"></p>
+</div></article>
 <article class="episode">
 <div class="art" aria-hidden="true"><div class="disc"><span class="label">04</span></div><small>ORA GOOD CAT / BEGINNER CLASS</small></div>
 <div><div class="meta"><span class="tag">欧拉好猫新手课堂</span><span>EP. 004</span><time datetime="2026-11-17">2026.11.17</time><span>建议 16–20 分钟</span></div>
@@ -78,6 +86,9 @@ const oraButton=document.getElementById('copy-ora'),oraStatus=document.getElemen
 const ora2Button=document.getElementById('copy-ora-2'),ora2Status=document.getElementById('copy-ora-2-status');
 const ora3Button=document.getElementById('copy-ora-3'),ora3Status=document.getElementById('copy-ora-3-status');
 const ora4Button=document.getElementById('copy-ora-4'),ora4Status=document.getElementById('copy-ora-4-status');
+const ora5Button=document.getElementById('copy-ora-5'),ora5Status=document.getElementById('copy-ora-5-status');
+ora5Button?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(ora5Button.dataset.url);ora5Status.textContent='链接已复制，去来福粘贴即可。';ora5Button.textContent='已复制 ✓';setTimeout(()=>ora5Button.textContent='复制点播链接',2500)}catch(e){ora5Status.textContent='请打开“阅读本期资料”，复制浏览器地址栏中的链接。'}});
+
 ora4Button?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(ora4Button.dataset.url);ora4Status.textContent='链接已复制，去来福粘贴即可。';ora4Button.textContent='已复制 ✓';setTimeout(()=>ora4Button.textContent='复制点播链接',2500)}catch(e){ora4Status.textContent='请打开“阅读本期资料”，复制浏览器地址栏中的链接。'}});
 
 ora3Button?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(ora3Button.dataset.url);ora3Status.textContent='链接已复制，去来福粘贴即可。';ora3Button.textContent='已复制 ✓';setTimeout(()=>ora3Button.textContent='复制点播链接',2500)}catch(e){ora3Status.textContent='请打开“阅读本期资料”，复制浏览器地址栏中的链接。'}});
