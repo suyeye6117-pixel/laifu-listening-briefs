@@ -22,11 +22,19 @@ a{color:inherit}button{font:inherit}a,button{-webkit-tap-highlight-color:transpa
 <main>
 <section class="hero" aria-labelledby="title"><div class="eyebrow">专题资料 · 持续收录</div><h1 id="title">把好奇，<br>留给下一次收听。</h1><p class="intro">每期一份完整资料，一个独立链接。选一个想了解的话题，带到来福，听它慢慢讲清楚。</p></section>
 <nav class="columns" aria-label="播客栏目">
-<a class="column" href="#ora-class"><span class="eyebrow">01 / 车型课堂</span><strong>欧拉好猫新手课堂 <span aria-hidden="true">↘</span></strong><span>2027 款 430 豪华版 · 依据官方说明书分阶段学习</span><small>10 期已发布</small></a>
+<a class="column" href="#ora-class"><span class="eyebrow">01 / 车型课堂</span><strong>欧拉好猫新手课堂 <span aria-hidden="true">↘</span></strong><span>2027 款 430 豪华版 · 依据官方说明书分阶段学习</span><small>11 期已发布</small></a>
 <a class="column" href="#owner-experience"><span class="eyebrow">02 / 经验专题</span><strong>新能源车主经验 <span aria-hidden="true">↘</span></strong><span>真实车主讨论、日常补能与新手避坑</span><small>1 期已发布</small></a>
 </nav>
-<section id="ora-class" class="collection" aria-labelledby="ora-title"><div class="sectionhead"><h2 id="ora-title">欧拉好猫新手课堂</h2><span class="count">10 期已发布</span></div>
+<section id="ora-class" class="collection" aria-labelledby="ora-title"><div class="sectionhead"><h2 id="ora-title">欧拉好猫新手课堂</h2><span class="count">11 期已发布</span></div>
 <p class="collection-intro">面向第一次开新能源车的新手，依据2027款欧拉好猫官方说明书分阶段学习。本栏目以430豪华版为准，每期独立保存。</p>
+<article class="episode">
+<div class="art" aria-hidden="true"><div class="disc"><span class="label">11</span></div><small>ORA GOOD CAT / BEGINNER CLASS</small></div>
+<div><div class="meta"><span class="tag">欧拉好猫新手课堂</span><span>EP. 011</span><time datetime="2026-11-17">2026.11.17</time><span>建议 12–14 分钟</span><span>单人朗读版</span><span>430豪华版选装</span></div>
+<h3><a href="/episodes/ora-011.html">前视影像记录仪与哨兵模式：录像怎么保存，停车监控怎样工作？</a></h3>
+<p class="summary">只讲你已选装的前视影像记录仪（含哨兵模式）：U盘规格与格式化、录像查看和备份、哨兵监控的三个必要条件、低危与高危报警、耗电及隐私注意事项。依据官方说明书第88–92页。</p>
+<div class="actions"><a class="btn" href="/episodes/ora-011.html">阅读本期资料 <span aria-hidden="true">&nbsp;↗</span></a><button class="btn secondary" type="button" id="copy-ora-11" data-url="https://listen.motifrevue.com/episodes/ora-011.html">复制点播链接</button></div>
+<p class="status" id="copy-ora-11-status" role="status" aria-live="polite"></p>
+</div></article>
 <article class="episode">
 <div class="art" aria-hidden="true"><div class="disc"><span class="label">10</span></div><small>ORA GOOD CAT / BEGINNER CLASS</small></div>
 <div><div class="meta"><span class="tag">欧拉好猫新手课堂</span><span>EP. 010</span><time datetime="2026-11-17">2026.11.17</time><span>建议 8–10 分钟</span><span>单人朗读版</span><span>430豪华版专属</span></div>
@@ -132,6 +140,9 @@ const ora7Button=document.getElementById('copy-ora-7'),ora7Status=document.getEl
 const ora8Button=document.getElementById('copy-ora-8'),ora8Status=document.getElementById('copy-ora-8-status');
 const ora9Button=document.getElementById('copy-ora-9'),ora9Status=document.getElementById('copy-ora-9-status');
 const ora10Button=document.getElementById('copy-ora-10'),ora10Status=document.getElementById('copy-ora-10-status');
+const ora11Button=document.getElementById('copy-ora-11'),ora11Status=document.getElementById('copy-ora-11-status');
+ora11Button?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(ora11Button.dataset.url);ora11Status.textContent='链接已复制，去来福粘贴即可。';ora11Button.textContent='已复制 ✓';setTimeout(()=>ora11Button.textContent='复制点播链接',2500)}catch(e){ora11Status.textContent='请打开“阅读本期资料”，复制浏览器地址栏中的链接。'}});
+
 ora10Button?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(ora10Button.dataset.url);ora10Status.textContent='链接已复制，去来福粘贴即可。';ora10Button.textContent='已复制 ✓';setTimeout(()=>ora10Button.textContent='复制点播链接',2500)}catch(e){ora10Status.textContent='请打开“阅读本期资料”，复制浏览器地址栏中的链接。'}});
 
 ora9Button?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(ora9Button.dataset.url);ora9Status.textContent='链接已复制，去来福粘贴即可。';ora9Button.textContent='已复制 ✓';setTimeout(()=>ora9Button.textContent='复制点播链接',2500)}catch(e){ora9Status.textContent='请打开“阅读本期资料”，复制浏览器地址栏中的链接。'}});
