@@ -2,7 +2,7 @@
 <html lang="zh-CN"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>听点什么｜播客资料目录</title>
-<meta name="description" content="每期一份完整资料，一个独立链接。浏览专题，复制节目资料链接，到来福生成你的播客。">
+<meta name="description" content="按栏目浏览播客资料：欧拉好猫新手课堂、新能源车主经验。每期独立保存，复制资料链接到来福生成节目。">
 <style>
 :root{color-scheme:light;--paper:#f5f3ed;--ink:#233330;--muted:#69716a;--line:#d8dcd2;--accent:#c45a37}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
@@ -16,14 +16,24 @@ a{color:inherit}button{font:inherit}a,button{-webkit-tap-highlight-color:transpa
 .actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;justify-content:center;align-items:center;min-height:46px;padding:8px 19px;border:1px solid var(--ink);text-decoration:none;background:var(--ink);color:white;cursor:pointer;border-radius:3px;font-size:14px}.secondary{background:transparent;color:var(--ink);border-color:#aeb8ad}.btn:hover{filter:brightness(.9)}.status{font-size:12px;min-height:24px;color:#415649;margin:8px 0 0}
 .guide{display:grid;grid-template-columns:1fr 2fr;gap:42px;padding:38px 0 52px}.guide h2{font-size:16px}.guide ol{margin:0;padding-left:22px;color:var(--muted);font-size:14px}.guide li{padding-bottom:7px}footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding:22px 0 35px;color:var(--muted);font-size:11px}
 @media(max-width:650px){.wrap{padding:0 22px}.mast small{font-size:9px;letter-spacing:.06em}.hero{padding:48px 0 38px}.intro{font-size:15px}.episode{grid-template-columns:1fr;gap:23px;padding-top:25px}.art{aspect-ratio:1.65/1}.disc{width:49%}.episode h3{font-size:25px}.guide{grid-template-columns:1fr;gap:15px;padding:28px 0 35px}footer{flex-direction:column;gap:3px}}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:0 0 50px}.column{display:flex;flex-direction:column;align-items:flex-start;padding:26px;border:1px solid var(--line);text-decoration:none;border-radius:4px;background:#eeefe8;transition:border-color .15s}.column:hover{border-color:var(--ink)}.column strong{font-size:23px;font-weight:600;margin:10px 0 8px;width:100%;display:flex;justify-content:space-between;gap:12px}.column>span:not(.eyebrow){font-size:14px;color:var(--muted)}.column small{font-size:12px;color:#415649;margin-top:18px}.collection{scroll-margin-top:24px;margin-bottom:35px}.collection-intro{font-size:14px;color:var(--muted);max-width:760px;margin:17px 0 0}.upcoming{display:grid;grid-template-columns:90px 1fr;gap:24px;padding:27px 0 30px;border-bottom:1px solid var(--line)}.upcoming-number{font:44px/1.4 Georgia,serif;color:#8d9c8c}.upcoming h3{font-size:23px;font-weight:600;margin:10px 0;line-height:1.5}.upcoming p{font-size:14px;color:var(--muted);margin:0}@media(max-width:650px){.columns{grid-template-columns:1fr;gap:12px;margin-bottom:30px}.column{padding:21px}.column strong{font-size:21px}.upcoming{grid-template-columns:40px 1fr;gap:15px}.upcoming-number{font-size:31px}.upcoming h3{font-size:21px}.count{font-size:11px}.sectionhead{gap:10px}}
 </style></head><body><div class="wrap">
 <header class="mast"><a class="brand" href="/" aria-label="听点什么 首页">听点什么</a><small>THE LISTENING INDEX</small></header>
 <main>
 <section class="hero" aria-labelledby="title"><div class="eyebrow">专题资料 · 持续收录</div><h1 id="title">把好奇，<br>留给下一次收听。</h1><p class="intro">每期一份完整资料，一个独立链接。选一个想了解的话题，带到来福，听它慢慢讲清楚。</p></section>
-<section aria-labelledby="episodes-title"><div class="sectionhead"><h2 id="episodes-title">全部节目</h2><span class="count">01 期已收录</span></div>
+<nav class="columns" aria-label="播客栏目">
+<a class="column" href="#ora-class"><span class="eyebrow">01 / 车型课堂</span><strong>欧拉好猫新手课堂 <span aria-hidden="true">↘</span></strong><span>2027 款 430 豪华版 · 依据官方说明书分阶段学习</span><small>筹备中</small></a>
+<a class="column" href="#owner-experience"><span class="eyebrow">02 / 经验专题</span><strong>新能源车主经验 <span aria-hidden="true">↘</span></strong><span>真实车主讨论、日常补能与新手避坑</span><small>1 期已发布</small></a>
+</nav>
+<section id="ora-class" class="collection" aria-labelledby="ora-title"><div class="sectionhead"><h2 id="ora-title">欧拉好猫新手课堂</h2><span class="count">筹备中 · 0 期已发布</span></div>
+<p class="collection-intro">面向第一次开新能源车的新手，依据 2027 款欧拉好猫官方说明书，从基础操作开始，逐步熟悉你的 430 豪华版。</p>
+<article class="upcoming"><div class="upcoming-number" aria-hidden="true">01</div><div><div class="meta"><span class="tag">第一课</span><span>待发布</span></div><h3>第一次开欧拉好猫：从上车到安全起步</h3><p>发布后，这里会提供完整资料和独立点播链接。</p></div></article>
+</section>
+<section id="owner-experience" class="collection" aria-labelledby="episodes-title"><div class="sectionhead"><h2 id="episodes-title">新能源车主经验</h2><span class="count">1 期已发布</span></div>
+<p class="collection-intro">整理网上车主的真实讨论，结合官方参考，了解日常用车中的选择、经验和注意事项。</p>
 <article class="episode">
 <div class="art" aria-hidden="true"><div class="disc"><span class="label">01</span></div><small>EVERYDAY / ELECTRIC LIFE</small></div>
-<div><div class="meta"><span class="tag">新能源用车</span><span>EP. 001</span><time datetime="2026-11-16">2026.11.16</time><span>建议 15–20 分钟</span></div>
+<div><div class="meta"><span class="tag">新能源车主经验</span><span>EP. 001</span><time datetime="2026-11-16">2026.11.16</time><span>建议 15–20 分钟</span></div>
 <h3><a href="/episodes/001.html">第一次开纯电车：老司机不会主动告诉你的20件事</a></h3>
 <p class="summary">充到 80% 还是 100%？公共快充怎么用？续航、能量回收和辅助驾驶该怎么看？结合车主讨论与官方参考，从第一次拥有纯电车的真实疑问讲起。</p>
 <div class="actions"><a class="btn" href="/episodes/001.html">阅读本期资料 <span aria-hidden="true">&nbsp;↗</span></a><button class="btn secondary" type="button" id="copy" data-url="https://listen.motifrevue.com/episodes/001.html">复制点播链接</button></div>
