@@ -33,6 +33,8 @@ article h3{font-size:18px;margin:25px 0 8px}
 footer{border-top:1px solid var(--line);padding-top:20px;margin-top:38px;color:var(--muted);font-size:13px}
 @media(max-width:560px){main{margin:25px auto;padding:0 18px 60px}body{font-size:16px}article h2{font-size:21px}.gear{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="/assets/read-aloud.css">
+<script src="/assets/read-aloud.js" defer></script>
 </head>
 <body><main>
 <header>
@@ -41,8 +43,13 @@ footer{border-top:1px solid var(--line);padding-top:20px;margin-top:38px;color:v
 <div class="subtitle">EP002｜2027款欧拉好猫 430 豪华版｜新手驾驶入门｜建议收听 12–15 分钟</div>
 </header>
 <nav aria-label="返回目录"><a href="/">← 返回播客资料目录</a></nav>
+<aside class="read-aloud" id="read-aloud" aria-label="正文语音朗读" data-no-read>
+<div class="read-aloud-controls"><button type="button" data-start>朗读正文</button><button type="button" data-pause disabled>暂停</button><button type="button" data-stop disabled>停止</button><label>语速<select data-rate aria-label="朗读语速"><option value="0.8">0.8 倍</option><option value="1" selected>1 倍</option><option value="1.2">1.2 倍</option><option value="1.5">1.5 倍</option></select></label></div>
+<p data-status role="status" aria-live="off">只朗读节目正文</p><noscript>请启用浏览器 JavaScript 以使用语音朗读。</noscript></aside>
 <article>
 <p class="lead">来福点播资料｜建议双主持人自然对话：一位代表刚拿驾照的新手提问，另一位按官方说明书解释。语气从容、步骤清楚，关键操作前留出停顿。不要把其他年款车型的换挡方式套用到本车。</p>
+<div id="read-aloud-body">
+
 
 <p>欢迎回来，这里是《欧拉好猫新手驾驶课》。上一期我们讲了坐进车里以后，怎样检查周围、调整座椅和后视镜、系好安全带，以及认识加速踏板和制动踏板。今天开始真正接触车辆操作：怎么启动？方向盘旁边的电子换挡拨杆怎么用？P、R、N、D分别是什么意思？第一次挂入D挡，怎样避免车子突然往前窜？</p>
 <p>本期针对的是2027款欧拉好猫430豪华版。我们使用的是长城欧拉官方《好猫2027款说明书（2026.08-V1）》，重点核对了车辆电源、换挡操作和驻车制动章节。今天讲到的操作以这份说明书为准。不同年款、不同车型的挡位逻辑可能不一样，不要照着其他车型的视频操作。</p>
@@ -139,6 +146,7 @@ footer{border-top:1px solid var(--line);padding-top:20px;margin-top:38px;color:v
 <h2>下一期预告</h2>
 <p>下一期我们继续学习真正上路前的基础控制：加速踏板和制动踏板怎样配合？低速跟车、停车场挪车、倒车入库时怎样控制速度？能量回收和驾驶模式会怎样影响松开加速踏板后的减速感？我们会继续以2027款官方说明书为依据，先把车辆的基础控制讲明白。</p>
 
+</div>
 <h2>参考资料｜以官方说明书为准</h2>
 <p>长城欧拉官方《好猫2027款说明书（2026.08-V1）》：<a href="https://res.gwm.com.cn/2026/09/27/1856135_272_ES11-7-%E5%A5%BD%E7%8C%AB2027%E6%AC%BE-%E8%AF%B4%E6%98%8E%E4%B9%A6-2026.08-V1.pdf">打开官方PDF说明书</a>。</p>
 <p>本期重点对应说明书：第38页“车辆电源”（ON、READY启动条件、钥匙应急启动、电源关闭）；第47页“换挡操作”（P/R/N/D定义、拨杆方向与换挡条件）；第48页“换挡操作”（蠕行、正常起步、停车）；第49页“驻车制动”（EPB施加、释放和紧急制动）；第50页“驻车制动”（AVH自动驻车）。</p>

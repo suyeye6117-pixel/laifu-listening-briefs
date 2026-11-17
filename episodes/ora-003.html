@@ -29,6 +29,8 @@ article h3{font-size:18px;margin:25px 0 8px}
 footer{border-top:1px solid var(--line);padding-top:20px;margin-top:38px;color:var(--muted);font-size:13px}
 @media(max-width:560px){main{margin:25px auto;padding:0 18px 60px}body{font-size:16px}article h2{font-size:21px}}
 </style>
+<link rel="stylesheet" href="/assets/read-aloud.css">
+<script src="/assets/read-aloud.js" defer></script>
 </head>
 <body><main>
 <header><div class="eyebrow">欧拉好猫新手课堂 · 2027 MODEL</div>
@@ -36,8 +38,13 @@ footer{border-top:1px solid var(--line);padding-top:20px;margin-top:38px;color:v
 <div class="subtitle">EP003｜2027款欧拉好猫430豪华版｜官方说明书分阶段学习｜建议收听 15–20 分钟</div>
 </header>
 <nav aria-label="返回目录"><a href="/">← 返回播客资料目录</a></nav>
+<aside class="read-aloud" id="read-aloud" aria-label="正文语音朗读" data-no-read>
+<div class="read-aloud-controls"><button type="button" data-start>朗读正文</button><button type="button" data-pause disabled>暂停</button><button type="button" data-stop disabled>停止</button><label>语速<select data-rate aria-label="朗读语速"><option value="0.8">0.8 倍</option><option value="1" selected>1 倍</option><option value="1.2">1.2 倍</option><option value="1.5">1.5 倍</option></select></label></div>
+<p data-status role="status" aria-live="off">只朗读节目正文</p><noscript>请启用浏览器 JavaScript 以使用语音朗读。</noscript></aside>
 <article>
 <p class="lead">来福点播资料｜采用自然的双主持人对谈：主持人A代表刚拿驾照、第一次开纯电车的车主；主持人B根据2027款欧拉好猫《说明书（2026.08-V1）》解释。请按生活化语速讲解，不要念页码和文献。涉及练车请明确提示：仅在合法、平坦、空旷、无行人、由有经验的人陪同的环境下练习，驾驶中不操作复杂车机菜单。</p>
+<div id="read-aloud-body">
+
 
 <h2>开场：车已经会启动了，接下来学会“慢慢开”</h2>
 <p><strong>主持人A：</strong>上次我学会了怎么踩刹车启动车辆，等READY灯亮，再用怀挡挂D挡。可是我现在还有点担心：一松刹车，车是不是就冲出去了？我怎么才能慢慢地开，慢慢地停？</p>
@@ -135,6 +142,7 @@ footer{border-top:1px solid var(--line);padding-top:20px;margin-top:38px;color:v
 <p>第三，先保持自己熟悉的驾驶模式和回收强度。不同模式和不同电池状态会影响车辆反馈，新手不需要一开始就尝试所有功能。</p>
 <p>下一期，我们学习真正影响新手上路安全的操作：转向灯、近光灯、远光灯、雨刮，以及玻璃起雾时应该怎么办。你会发现，能安全开车，不只是能把车开走，更是知道在各种路况里怎样让自己看清、让别人看见。</p>
 
+</div>
 <h2>资料来源与适用范围</h2>
 <p>官方来源：<a href="https://res.gwm.com.cn/2026/09/27/1856135_272_ES11-7-%E5%A5%BD%E7%8C%AB2027%E6%AC%BE-%E8%AF%B4%E6%98%8E%E4%B9%A6-2026.08-V1.pdf">长城欧拉《好猫2027款说明书（2026.08-V1）》</a>。</p>
 <p>已核对章节：第40页驾驶模式；第42页舒适制动；第47–48页换挡、爬行、起步与停车；第49–50页电子驻车和自动驻车；第96页ABS；第97页ESC及上坡辅助；第142页能量回收；第188–192页行车规范和新车磨合。</p>

@@ -28,6 +28,8 @@ article h3{font-size:18px;margin:25px 0 8px}
 footer{border-top:1px solid var(--line);padding-top:20px;margin-top:38px;color:var(--muted);font-size:13px}
 @media(max-width:560px){main{margin:25px auto;padding:0 18px 60px}body{font-size:16px}article h2{font-size:21px}}
 </style>
+<link rel="stylesheet" href="/assets/read-aloud.css">
+<script src="/assets/read-aloud.js" defer></script>
 </head>
 <body><main>
 <header>
@@ -36,8 +38,13 @@ footer{border-top:1px solid var(--line);padding-top:20px;margin-top:38px;color:v
 <div class="subtitle">EP001｜2027款欧拉好猫 430 豪华版｜新手驾驶入门｜建议收听 10–12 分钟</div>
 </header>
 <nav aria-label="返回目录"><a href="/">← 返回播客资料目录</a></nav>
+<aside class="read-aloud" id="read-aloud" aria-label="正文语音朗读" data-no-read>
+<div class="read-aloud-controls"><button type="button" data-start>朗读正文</button><button type="button" data-pause disabled>暂停</button><button type="button" data-stop disabled>停止</button><label>语速<select data-rate aria-label="朗读语速"><option value="0.8">0.8 倍</option><option value="1" selected>1 倍</option><option value="1.2">1.2 倍</option><option value="1.5">1.5 倍</option></select></label></div>
+<p data-status role="status" aria-live="off">只朗读节目正文</p><noscript>请启用浏览器 JavaScript 以使用语音朗读。</noscript></aside>
 <article>
 <p class="lead">来福点播资料｜建议采用双主持人自然对话：一位代表刚拿驾照的新手提问，另一位用生活化语言解释。语速从容，不要像念说明书。重点是让听众理解安全原因，而不是背诵术语。</p>
+<div id="read-aloud-body">
+
 
 <p>欢迎来到《欧拉好猫新手驾驶课》。这套课程专门为第一次开新能源车的新手准备。我们的学习对象是2027款欧拉好猫430豪华版。今天是第一期，先不急着启动，也不急着上路。我们先学会在坐进驾驶位之后，把自己和车辆调整到安全、舒服、能够正确控制车辆的状态。</p>
 
@@ -102,6 +109,7 @@ footer{border-top:1px solid var(--line);padding-top:20px;margin-top:38px;color:v
 <h2>下一期预告</h2>
 <p>下一期我们再正式进入车辆操作：欧拉好猫如何上电和启动？电子怀挡怎样识别？P、R、N、D分别代表什么？怎样从停车状态安全起步、倒车和停车？这些操作必须严格按2027款官方说明书讲解，我们会把每一个动作拆开说明，不拿旧款车型的经验替代你的车辆手册。</p>
 
+</div>
 <h2>参考资料</h2>
 <p>欧拉官方车型手册入口：<a href="https://www.oraev.com/modelmanual.html">欧拉车型手册｜2027款长城欧拉好猫</a>。</p>
 <p>本车随车说明书：<a href="https://res.gwm.com.cn/2026/09/27/1856135_272_ES11-7-%E5%A5%BD%E7%8C%AB2027%E6%AC%BE-%E8%AF%B4%E6%98%8E%E4%B9%A6-2026.08-V1.pdf">《好猫2027款说明书（2026.08-V1）》PDF</a>。本期重点对应说明书中的座椅（第144–145页）、方向盘（第42页）、后视镜（第44页）和安全带章节（第166页）。</p>

@@ -20,6 +20,8 @@ article h2{font-size:23px;line-height:1.5;margin:36px 0 12px}.lead{background:va
 .checklist p{margin:0 0 7px}footer{border-top:1px solid var(--line);margin-top:38px;padding-top:20px;color:var(--muted);font-size:13px}
 @media(max-width:560px){main{margin:25px auto;padding:0 18px 60px}body{font-size:16px}article h2{font-size:21px}}
 </style>
+<link rel="stylesheet" href="/assets/read-aloud.css">
+<script src="/assets/read-aloud.js" defer></script>
 </head>
 <body><main>
 <header>
@@ -28,8 +30,13 @@ article h2{font-size:23px;line-height:1.5;margin:36px 0 12px}.lead{background:va
 <div class="subtitle">EP005｜2027款欧拉好猫 430 豪华版｜建议收听 18–22 分钟</div>
 </header>
 <nav aria-label="返回目录"><a href="/">← 返回播客资料目录</a></nav>
+<aside class="read-aloud" id="read-aloud" aria-label="正文语音朗读" data-no-read>
+<div class="read-aloud-controls"><button type="button" data-start>朗读正文</button><button type="button" data-pause disabled>暂停</button><button type="button" data-stop disabled>停止</button><label>语速<select data-rate aria-label="朗读语速"><option value="0.8">0.8 倍</option><option value="1" selected>1 倍</option><option value="1.2">1.2 倍</option><option value="1.5">1.5 倍</option></select></label></div>
+<p data-status role="status" aria-live="off">只朗读节目正文</p><noscript>请启用浏览器 JavaScript 以使用语音朗读。</noscript></aside>
 <article>
 <p class="lead">来福点播资料｜请制作中文双主持人自然对话节目。主持人A是刚拿到驾照、第一次开新能源车的新手；主持人B耐心讲解，语气平实，不要像说明书朗读。核心任务是教会新手如何安全倒车、如何理解影像与雷达提示，以及这些辅助功能的盲区。必须把“基础倒车影像/全景影像”和“配置依赖的自动泊车/遥控泊车”区分开，不得把选配功能说成每辆430豪华版都一定配备。所有实际操作练习均在安全、空旷、低速或停车状态下进行。</p>
+<div id="read-aloud-body">
+
 
 <h2>开场：倒车时，屏幕里的画面不能代替你的眼睛</h2>
 <p><strong>主持人A：</strong>前几期我学会了上车、启动、挂挡、加减速，还有灯光和雨刮。现在我最紧张的就是停车。尤其倒车入库，驾校教练在旁边的时候还好，自己开车就怕看不准距离。</p>
@@ -137,6 +144,7 @@ article h2{font-size:23px;line-height:1.5;margin:36px 0 12px}.lead{background:va
 <p><strong>主持人A：</strong>下一次我希望学仪表盘上的各种提示灯和车辆状态，至少开车时看到图标不会慌。</p>
 <p><strong>主持人B：</strong>下一期我们就讲这个：组合仪表怎么看，常见指示灯和警告灯有什么区别，哪些可以继续观察，哪些必须尽快安全停车。还是按你的2027款欧拉好猫430豪华版官方说明书来学。</p>
 
+</div>
 <h2>官方资料与核对范围</h2>
 <p>唯一操作依据：<a href="https://res.gwm.com.cn/2026/09/27/1856135_272_ES11-7-%E5%A5%BD%E7%8C%AB2027%E6%AC%BE-%E8%AF%B4%E6%98%8E%E4%B9%A6-2026.08-V1.pdf">长城欧拉《好猫2027款-说明书-2026.08-V1.pdf》</a>。</p>
 <p>本期已核对：第60–61页泊车系统传感器、安全警告与盲区；第61–62页泊车设置、泊车按钮及防撞雷达；第63页倒车影像、动态引导线与全景影像；第64–66页全景影像操作、泊车辅助及其限制；第67–68页倒车循迹功能及退出条件。</p>

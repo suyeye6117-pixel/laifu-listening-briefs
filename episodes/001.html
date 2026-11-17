@@ -7,13 +7,20 @@
 <style>
 :root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f7f4;color:#202629;font:17px/1.9 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}main{max-width:820px;margin:48px auto;padding:0 24px 80px}header{border-bottom:1px solid #d9ddda;padding-bottom:25px}.eyebrow{font-size:12px;letter-spacing:.16em;color:#718087}h1{font-size:clamp(30px,5vw,44px);line-height:1.35;margin:14px 0 10px}h2{font-size:23px;line-height:1.5;margin:38px 0 12px}p{margin:0 0 17px;overflow-wrap:anywhere}.sub{background:#eaf0ee;padding:12px 16px;border-left:3px solid #78958c;color:#596a66}.note{color:#69767a;font-size:14px}a{color:#235f82;text-decoration-thickness:1px;text-underline-offset:3px}footer{border-top:1px solid #d9ddda;padding-top:20px;color:#69767a;font-size:13px}@media(max-width:560px){main{margin:25px auto;padding:0 18px 60px}body{font-size:16px}}
 </style>
+<link rel="stylesheet" href="/assets/read-aloud.css">
+<script src="/assets/read-aloud.js" defer></script>
 </head>
 <body><main>
 <header><div class="eyebrow">LAIFU · PODCAST READING MATERIAL</div><h1>第一次开纯电车：老司机不会主动告诉你的20件事</h1><div>真实车主讨论 × 官方参考 × 新手实践</div></header>
 <nav aria-label="返回目录" style="margin:20px 0"><a href="/">← 全部节目</a></nav>
+<aside class="read-aloud" id="read-aloud" aria-label="正文语音朗读" data-no-read>
+<div class="read-aloud-controls"><button type="button" data-start>朗读正文</button><button type="button" data-pause disabled>暂停</button><button type="button" data-stop disabled>停止</button><label>语速<select data-rate aria-label="朗读语速"><option value="0.8">0.8 倍</option><option value="1" selected>1 倍</option><option value="1.2">1.2 倍</option><option value="1.5">1.5 倍</option></select></label></div>
+<p data-status role="status" aria-live="off">只朗读节目正文</p><noscript>请启用浏览器 JavaScript 以使用语音朗读。</noscript></aside>
 <article>
 <p class="sub">来福点播资料｜建议时长15—20分钟｜双主持人自然对话</p>
 <p>本期以中国大陆日常用车为主，参考中文车主口碑、海外 EV 社区讨论和官方安全资料。建议采用轻松、有来有回的双主持人对话：一位提出新手疑问，另一位结合真实讨论和可靠资料解释。不要像说明书一样逐条念，也不要编造车主故事。海外充电网络、价格、法规和气候与中国不同，只借鉴经验和问题意识，不照搬具体 App 和操作规则。车辆说明书、车机提示和厂家售后要求优先。</p>
+
+<div id="read-aloud-body">
 <h2>开场：新车主最容易焦虑的是什么？</h2>
 <p>很多人第一次买纯电车，最初几周会频繁查看电量、反复打开充电 App，担心临时出门找不到充电桩。海外车主社区里，有新车主分享自己刚提车时几乎每晚都确认车辆是否在充电，第一次长途提前几天规划所有充电站；大约三个月后，才逐渐形成自己的补能节奏。这是个人经历，不是统计结论，但能说明新手适应期确实存在。</p>
 <p>核心观点：电车使用体验的关键，不是背下一套复杂的电池口诀，而是建立一套适合自己生活半径的补能系统。先记录每周行驶里程、常去地点和实际能耗，再找到一两个主力充电站和一个备用站。不要只收藏一个站点，也不必因为电量掉了几个百分点就立刻找桩。</p>
@@ -52,6 +59,7 @@
 <p>5. 辅助驾驶到底能帮到什么程度？讨论功能边界、驾驶人责任，以及复杂天气和施工环境下的风险。</p>
 <h2>结尾：新手真正需要建立的是一套用车系统</h2>
 <p>第一次拥有纯电车，最重要的不是背下一套电池保养口诀，而是建立适合自己生活半径的使用系统：知道去哪充、怎么判断续航、何时补电、如何安全操作公共充电桩、遇到异常找谁，以及哪些功能不能过度依赖。把车辆说明书当作操作标准，把真实车主讨论当作经验补充，把自己的用车数据当作最终参考。不要被续航焦虑、极端案例和网络偏方牵着走。</p>
+</div>
 <h2>资料来源｜车主讨论与官方资料</h2>
 <p>Reddit：<a href="https://www.reddit.com/r/electricvehicles/comments/1kpzzse/new_ev_owner_info_post_things_you_must_know/">New EV Owner Info Post: THINGS YOU MUST KNOW</a>；<a href="https://www.reddit.com/r/electricvehicles/comments/1trwzwe/how_does_charging_affect_the_battery/">How does Charging affect the battery?</a>；<a href="https://www.reddit.com/r/electricvehicles/comments/1hdr5yp/what_do_i_need_to_know_as_a_new_ev_owner/">What do I need to know as a new EV owner?</a>。</p>
 <p>汽车之家：<a href="https://k.autohome.com.cn/detail/view_01kmht6gnn6mw32dss6gwg0000.html">欧拉好猫430km豪华型真实用车口碑</a>。</p>

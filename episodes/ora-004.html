@@ -20,6 +20,8 @@ article h2{font-size:23px;line-height:1.5;margin:36px 0 12px}.lead{background:va
 .checklist p{margin:0 0 7px}footer{border-top:1px solid var(--line);margin-top:38px;padding-top:20px;color:var(--muted);font-size:13px}
 @media(max-width:560px){main{margin:25px auto;padding:0 18px 60px}body{font-size:16px}article h2{font-size:21px}}
 </style>
+<link rel="stylesheet" href="/assets/read-aloud.css">
+<script src="/assets/read-aloud.js" defer></script>
 </head>
 <body><main>
 <header>
@@ -28,8 +30,13 @@ article h2{font-size:23px;line-height:1.5;margin:36px 0 12px}.lead{background:va
 <div class="subtitle">EP004｜2027款欧拉好猫 430 豪华版｜建议收听 16–20 分钟</div>
 </header>
 <nav aria-label="返回目录"><a href="/">← 返回播客资料目录</a></nav>
+<aside class="read-aloud" id="read-aloud" aria-label="正文语音朗读" data-no-read>
+<div class="read-aloud-controls"><button type="button" data-start>朗读正文</button><button type="button" data-pause disabled>暂停</button><button type="button" data-stop disabled>停止</button><label>语速<select data-rate aria-label="朗读语速"><option value="0.8">0.8 倍</option><option value="1" selected>1 倍</option><option value="1.2">1.2 倍</option><option value="1.5">1.5 倍</option></select></label></div>
+<p data-status role="status" aria-live="off">只朗读节目正文</p><noscript>请启用浏览器 JavaScript 以使用语音朗读。</noscript></aside>
 <article>
 <p class="lead">来福点播资料｜请采用中文双主持人自然对话：A代表刚拿到驾照、第一次开新能源车的新手；B耐心解释。语言像朋友讨论实际驾驶，而非朗读说明书条文。讲操作时要清楚区别“车辆原本的功能”和“给新手的使用建议”。涉及练习，统一强调在安全停放状态下先认按键，行驶中不低头找车机菜单。本资料只依据2027款《好猫说明书（2026.08-V1）》的对应章节。</p>
+<div id="read-aloud-body">
+
 
 <h2>开场：会开走，还不等于会在雨夜安全驾驶</h2>
 <p><strong>主持人A：</strong>我现在大概知道怎么启动、挂挡、起步和停车了。可是真上路以后，转弯要打灯，下雨得开雨刮，有时车窗突然一层雾，我就怕手忙脚乱。好猫的这些功能该怎么找？</p>
@@ -140,6 +147,7 @@ article h2{font-size:23px;line-height:1.5;margin:36px 0 12px}.lead{background:va
 <p><strong>主持人A：</strong>所以，我可以慢慢熟悉自动功能，但要先学会手动控制，也要知道什么时候必须停下。</p>
 <p><strong>主持人B：</strong>正是这样。下一期我们会讲停车场和路口最常用的辅助功能：倒车影像、全景影像、雷达提示和泊车时怎样判断距离。仍然以你的2027款欧拉好猫430豪华版官方说明书与实车配置为准。</p>
 
+</div>
 <h2>官方资料与核对范围</h2>
 <p>唯一操作依据：<a href="https://res.gwm.com.cn/2026/09/27/1856135_272_ES11-7-%E5%A5%BD%E7%8C%AB2027%E6%AC%BE-%E8%AF%B4%E6%98%8E%E4%B9%A6-2026.08-V1.pdf">长城欧拉《好猫2027款-说明书-2026.08-V1.pdf》</a>。</p>
 <p>本期已核对：第40页女神模式及自动雨刮设置；第41页乘风破浪模式；第46页外后视镜除霜的配置条件；第51–54页车灯、转向灯、远近光及危险警告灯；第56–57页前雨刮、洗涤、冬季模式；第148–150页空调、前后除霜和自动除雾。</p>
