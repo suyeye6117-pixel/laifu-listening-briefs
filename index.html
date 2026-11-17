@@ -25,9 +25,16 @@ a{color:inherit}button{font:inherit}a,button{-webkit-tap-highlight-color:transpa
 <a class="column" href="#ora-class"><span class="eyebrow">01 / 车型课堂</span><strong>欧拉好猫新手课堂 <span aria-hidden="true">↘</span></strong><span>2027 款 430 豪华版 · 依据官方说明书分阶段学习</span><small>筹备中</small></a>
 <a class="column" href="#owner-experience"><span class="eyebrow">02 / 经验专题</span><strong>新能源车主经验 <span aria-hidden="true">↘</span></strong><span>真实车主讨论、日常补能与新手避坑</span><small>1 期已发布</small></a>
 </nav>
-<section id="ora-class" class="collection" aria-labelledby="ora-title"><div class="sectionhead"><h2 id="ora-title">欧拉好猫新手课堂</h2><span class="count">筹备中 · 0 期已发布</span></div>
-<p class="collection-intro">面向第一次开新能源车的新手，依据 2027 款欧拉好猫官方说明书，从基础操作开始，逐步熟悉你的 430 豪华版。</p>
-<article class="upcoming"><div class="upcoming-number" aria-hidden="true">01</div><div><div class="meta"><span class="tag">第一课</span><span>待发布</span></div><h3>第一次开欧拉好猫：从上车到安全起步</h3><p>发布后，这里会提供完整资料和独立点播链接。</p></div></article>
+<section id="ora-class" class="collection" aria-labelledby="ora-title"><div class="sectionhead"><h2 id="ora-title">欧拉好猫新手课堂</h2><span class="count">1 期已发布</span></div>
+<p class="collection-intro">面向第一次开新能源车的新手，依据2027款欧拉好猫官方说明书分阶段学习。本栏目以430豪华版为准，每期独立保存。</p>
+<article class="episode">
+<div class="art" aria-hidden="true"><div class="disc"><span class="label">01</span></div><small>ORA GOOD CAT / BEGINNER CLASS</small></div>
+<div><div class="meta"><span class="tag">欧拉好猫新手课堂</span><span>EP. 001</span><time datetime="2026-11-17">2026.11.17</time><span>建议 10–12 分钟</span></div>
+<h3><a href="/episodes/ora-001.html">第一次坐进欧拉好猫：上车前的安全准备</a></h3>
+<p class="summary">从上车前绕车检查，到主驾驶座椅、驾驶姿势、后视镜、安全带、踏板和双屏认知。先把驾驶准备做好，再学习启动与换挡。</p>
+<div class="actions"><a class="btn" href="/episodes/ora-001.html">阅读本期资料 <span aria-hidden="true">&nbsp;↗</span></a><button class="btn secondary" type="button" id="copy-ora" data-url="https://listen.motifrevue.com/episodes/ora-001.html">复制点播链接</button></div>
+<p class="status" id="copy-ora-status" role="status" aria-live="polite"></p>
+</div></article>
 </section>
 <section id="owner-experience" class="collection" aria-labelledby="episodes-title"><div class="sectionhead"><h2 id="episodes-title">新能源车主经验</h2><span class="count">1 期已发布</span></div>
 <p class="collection-intro">整理网上车主的真实讨论，结合官方参考，了解日常用车中的选择、经验和注意事项。</p>
@@ -43,5 +50,7 @@ a{color:inherit}button{font:inherit}a,button{-webkit-tap-highlight-color:transpa
 </main><footer><span>听点什么 · 播客资料目录</span><span>每期独立保存，旧节目随时可读。</span></footer>
 </div><script>
 const button=document.getElementById('copy'),status=document.getElementById('copy-status');
+const oraButton=document.getElementById('copy-ora'),oraStatus=document.getElementById('copy-ora-status');
+oraButton?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(oraButton.dataset.url);oraStatus.textContent='链接已复制，去来福粘贴即可。';oraButton.textContent='已复制 ✓';setTimeout(()=>oraButton.textContent='复制点播链接',2500)}catch(e){oraStatus.textContent='请打开“阅读本期资料”，复制浏览器地址栏中的链接。'}});
 button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(button.dataset.url);status.textContent='链接已复制，去来福粘贴即可。';button.textContent='已复制 ✓';setTimeout(()=>button.textContent='复制点播链接',2500)}catch(e){status.textContent='请打开“阅读本期资料”，复制浏览器地址栏中的链接。'}});
 </script></body></html>
