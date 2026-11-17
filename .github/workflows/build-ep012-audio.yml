@@ -1,0 +1,29 @@
+name: Build episode 012 Guoliang narration
+on:
+  push:
+    paths:
+      - '.github/workflows/build-ep012-audio.yml'
+permissions:
+  contents: write
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install audio encoder
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Assemble complete Guoliang narration
+        run: python3 .podcast/build_ep012.py
+      - name: Save complete audio and twelfth episode page
+        run: |
+          git config user.name 'suyeye6117-pixel'
+          git config user.email '307068200+suyeye6117-pixel@users.noreply.github.com'
+          git add assets/audio/ora-012-guoliang.mp3 assets/audio/ora-012-guoliang.json episodes/ora-012.html index.html
+          git commit -m 'Publish episode 012 Guoliang male narration'
+          git pull --rebase origin main
+          git push origin HEAD:main
